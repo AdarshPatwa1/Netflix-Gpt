@@ -10,7 +10,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjBiMmI0ZThmOWMxMWY4YmI4MDlhNWQwZmQ1ZTU5MSIsIm5iZiI6MTczODY0NzEyNS43ODMsInN1YiI6IjY3YTFhNjU1NTNhZWFhMmI0NGUyYzc0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OWWcVYcNLSx4BtlQMCXSGXXFBmULgkKz5NK-mb-UF-s'
+    Authorization: 'Bearer' + process.env.REACT_APP_TMDB_KEY,
   },
 }
 
@@ -20,4 +20,4 @@ export const BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-
 
 export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"}, {identifier: "hindi", name: "Hindi"}, {identifier: "spanish", name: "Spanish"}]
 
- export const OPENAI_KEY = "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";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
